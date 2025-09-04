@@ -4,11 +4,11 @@ using System.Diagnostics;
 
 Console.WriteLine("GitCleaner");
 
-//if (!System.IO.Directory.Exists(".git"))
-//{
-//    Console.WriteLine("This is not a git repository.");
-//    return;
-//}
+if (!System.IO.Directory.Exists(".git"))
+{
+    Console.WriteLine("This is not a git repository.");
+    return;
+}
 
 Console.Write("Enter the primary branch (default: main): ");
 string primaryBranch = Console.ReadLine();
